@@ -1,245 +1,177 @@
 # Smart-School-Portal
-Smart School Portal is a full-stack school management system built using React.js (Frontend) and Node.js + Express.js (Backend).
 
-It provides a complete role-based platform for managing students, teachers, classes, subjects, attendance, assignments, and academic performance.
-
-The system includes:
-
-Student Dashboard
-
-Teacher Dashboard
-
-Admin Panel
-
-Attendance Monitoring
-
-Subject & Faculty Mapping
-
-File Upload (Notes & Assignments)
-
-Analytics Dashboard
-
-Role-Based Authentication
-
-This project is designed to simulate a real-world school ERP system and demonstrate modern frontend and backend architecture.
-
-🚀 Tech Stack
-Frontend
-
-React.js
-
-React Router
-
-Context API / Redux Toolkit
-
-Axios
-
-React Hook Form / Formik
-
-Chart.js / Recharts
-
-CSS / Tailwind / Bootstrap
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB (Mongoose)
-
-JWT Authentication
-
-Multer (File Upload)
-
-bcrypt (Password Hashing)
-
-👥 User Roles
-🎓 Student
-
-Login / Logout
-
-View Subjects
-
-View Assigned Faculty
-
-View Attendance %
-
-Download Notes
-
-View Assignments
-
-View Exam Results
-
-View Timetable
-
-Update Profile
-
-👩‍🏫 Teacher
-
-Login / Logout
-
-View Assigned Classes
-
-Mark Attendance
-
-Upload Notes (PDF)
-
-Create Assignments
-
-Add Marks
-
-View Student List
-
-Update Profile
-
-👨‍💼 Admin
-
-Manage Classes (1–12)
-
-Manage Subjects
-
-Add / Edit / Delete Teachers
-
-Add / Edit / Delete Students
-
-Assign Teacher to Subject
-
-Create Timetable
-
-View System Analytics
-
-Manage Roles
-
-Monitor Attendance Reports
-
-🏗️ Core Features
-1️⃣ Role-Based Authentication
-
-JWT based authentication
-
-Protected Routes
-
-Role-based access control
-
-Token validation middleware
-
-Password hashing using bcrypt
-
-2️⃣ Attendance Monitoring System
-
-Teacher marks attendance
-
-Attendance stored class-wise and date-wise
-
-Student sees attendance %
-
-Admin can view reports
-
-Attendance analytics chart
-
-3️⃣ Subject & Faculty Mapping
-
-Class → Subjects
-
-Subject → Assigned Teacher
-
-Dynamic rendering based on class selection
-
-4️⃣ Dashboard System
-
-Each user has:
-
-Sidebar navigation
-
-Role-based menu items
-
-Dynamic content rendering
-
-5️⃣ File Upload System
-
-Teacher uploads:
-
-Notes (PDF)
-
-Assignments
-
-Student downloads files
-
-Files stored using Multer
-
-6️⃣ Timetable Management
-
-Admin creates timetable
-
-Class-based timetable view
-
-Student & Teacher access
-
-7️⃣ Analytics Dashboard
-
-Attendance graph
-
-Class strength chart
-
-Subject performance
-
-Student performance overview
-
-⚛️ React Concepts Implemented
-✅ Functional Components
-
-All components built using modern functional components.
-
-✅ React Hooks
-
-useState
-
-useEffect
-
-useContext
-
-useRef
-
-Custom Hooks
-
-✅ React Router
-
-Nested routing
-
-Dynamic routes
-
-Protected routes
-
-Role-based route guards
-
-⚡ Lazy Loading Implementation
+Smart School Portal is a full-stack School Management System built using **React.js (Frontend)** and **Node.js + Express.js (Backend)**.
+
+It provides a complete role-based platform for managing students, teachers, classes, subjects, attendance, assignments and academic performance.
+
+---
+
+# 📑 Table of Contents
+
+- [🚀 Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [👥 User Roles](#-user-roles)
+- [🏗️ Core Features](#️-core-features)
+- [⚛️ React Concepts Implemented](#️-react-concepts-implemented)
+- [⚡ Lazy Loading](#-lazy-loading)
+- [🗂️ Folder Structure](#️-folder-structure)
+- [🛠️ Backend Functionalities](#️-backend-functionalities)
+- [📦 Database Design](#-database-design)
+- [⚙️ Installation & Setup](#️-installation--setup)
+- [🎯 Learning Outcomes](#-learning-outcomes)
+- [🌟 Future Enhancements](#-future-enhancements)
+
+---
+
+# 🚀 Features
+
+- Student Dashboard  
+- Teacher Dashboard  
+- Admin Panel  
+- Attendance Monitoring  
+- Subject & Faculty Mapping  
+- File Upload (Notes & Assignments)  
+- Analytics Dashboard  
+- Role-Based Authentication  
+
+---
+
+# 🛠️ Tech Stack
+
+## 💻 Frontend
+- React.js  
+- React Router  
+- Context API / Redux Toolkit  
+- Axios  
+- React Hook Form / Formik  
+- Chart.js / Recharts  
+- CSS / Tailwind / Bootstrap  
+
+## 🖥️ Backend
+- Node.js  
+- Express.js  
+- MongoDB (Mongoose)  
+- JWT Authentication  
+- Multer (File Upload)  
+- bcrypt (Password Hashing)  
+
+---
+
+# 👥 User Roles
+
+## 🎓 Student
+- Login / Logout  
+- View Subjects  
+- View Assigned Faculty  
+- View Attendance %  
+- Download Notes  
+- View Assignments  
+- View Exam Results  
+- View Timetable  
+- Update Profile  
+
+## 👩‍🏫 Teacher
+- Login / Logout  
+- View Assigned Classes  
+- Mark Attendance  
+- Upload Notes (PDF)  
+- Create Assignments  
+- Add Marks  
+- View Student List  
+- Update Profile  
+
+## 👨‍💼 Admin
+- Manage Classes (1–12)  
+- Manage Subjects  
+- Add / Edit / Delete Teachers  
+- Add / Edit / Delete Students  
+- Assign Teacher to Subject  
+- Create Timetable  
+- View System Analytics  
+- Manage Roles  
+- Monitor Attendance Reports  
+
+---
+
+# 🏗️ Core Features
+
+## 🔐 Role-Based Authentication
+- JWT-based authentication  
+- Protected Routes  
+- Role-based access control  
+- Token validation middleware  
+- Password hashing using bcrypt  
+
+## 📅 Attendance Monitoring System
+- Teacher marks attendance  
+- Attendance stored class-wise and date-wise  
+- Student sees attendance %  
+- Admin can view reports  
+- Attendance analytics chart  
+
+## 📚 Subject & Faculty Mapping
+- Class → Subjects  
+- Subject → Assigned Teacher  
+- Dynamic rendering based on class selection  
+
+## 📂 File Upload System
+- Teacher uploads notes & assignments  
+- Students download files  
+- Files handled using Multer  
+
+## 📊 Analytics Dashboard
+- Attendance graph  
+- Class strength chart  
+- Subject performance  
+- Student performance overview  
+
+---
+
+# ⚛️ React Concepts Implemented
+
+## ✅ Functional Components
+All components are built using modern functional components.
+
+## ✅ React Hooks
+- useState  
+- useEffect  
+- useContext  
+- useRef  
+- Custom Hooks  
+
+## ✅ React Router
+- Nested routing  
+- Dynamic routes  
+- Protected routes  
+- Role-based route guards  
+
+---
+
+# ⚡ Lazy Loading
 
 To improve performance and reduce bundle size:
 
-Pages are lazy loaded using React.lazy()
+- Pages are lazy loaded using `React.lazy()`  
+- `Suspense` is used for fallback loading UI  
+- Dashboard modules are loaded only when required  
 
-Suspense is used for fallback loading UI
+### 🎯 Benefits
+- Faster initial load time  
+- Optimized performance  
+- Scalable architecture  
 
-Dashboard modules are loaded only when required
+### Example
+- Student module lazy loaded  
+- Teacher module lazy loaded  
+- Admin module lazy loaded  
 
-Benefits:
+---
 
-Faster initial load time
+# 🗂️ Folder Structure
 
-Optimized performance
+## Frontend
 
-Scalable architecture
-
-Example structure:
-
-Student module lazy loaded
-
-Teacher module lazy loaded
-
-Admin module lazy loaded
-
-🗂️ Folder Structure (Frontend)
+```
 src/
  ├── components/
  ├── pages/
@@ -250,159 +182,158 @@ src/
  ├── services/
  ├── utils/
  ├── assets/
-🛠️ Backend Functionalities (Node.js)
-🔐 Authentication & Authorization
+```
 
-Register user (Student / Teacher)
+## Backend
 
-Login user
+```
+server/
+ ├── controllers/
+ ├── models/
+ ├── routes/
+ ├── middleware/
+ ├── config/
+ ├── utils/
+ └── server.js
+```
 
-Generate JWT token
+---
 
-Middleware for token verification
+# 🛠️ Backend Functionalities
 
-Role-based middleware
+## 🔐 Authentication APIs
+- Register User  
+- Login User  
+- Generate JWT Token  
+- Verify Token Middleware  
+- Role-based Authorization  
 
-🏫 Class Management APIs
+## 🏫 Class Management
+- Create Class  
+- Get All Classes  
+- Update Class  
+- Delete Class  
 
-Create Class
+## 📚 Subject Management
+- Add Subject  
+- Assign Teacher  
+- Get Subjects by Class  
+- Update Subject  
+- Delete Subject  
 
-Get All Classes
+## 🎓 Student Management
+- Add Student  
+- Update Student  
+- Delete Student  
+- Get Students by Class  
+- View Attendance  
 
-Update Class
+## 👩‍🏫 Teacher Management
+- Add Teacher  
+- Assign Class  
+- Update Profile  
 
-Delete Class
+## 📅 Attendance APIs
+- Mark Attendance  
+- Get Attendance by Student  
+- Get Attendance by Class  
+- Attendance Analytics  
 
-📚 Subject Management APIs
+## 📂 File APIs
+- Upload Notes  
+- Upload Assignments  
+- Download Files  
+- Delete Files  
 
-Add Subject to Class
+---
 
-Get Subjects by Class
+# 📦 Database Design (MongoDB Collections)
 
-Assign Teacher to Subject
+- Users  
+- Classes  
+- Subjects  
+- Attendance  
+- Assignments  
+- Timetable  
+- Marks  
+- Notifications  
 
-Update Subject
+---
 
-Delete Subject
+# ⚙️ Installation & Setup
 
-👩‍🏫 Teacher APIs
+## 1️⃣ Clone Repository
 
-Add Teacher
+```bash
+git clone https://github.com/your-username/smart-school-portal.git
+```
 
-Get Teacher Details
+---
 
-Assign Class
+## 2️⃣ Frontend Setup
 
-Update Profile
+```bash
+cd client
+npm install
+npm start
+```
 
-🎓 Student APIs
+---
 
-Add Student
+## 3️⃣ Backend Setup
 
-Get Students by Class
+```bash
+cd server
+npm install
+npm run dev
+```
 
-Update Student
+---
 
-Delete Student
+## 4️⃣ Environment Variables (Backend)
 
-View Attendance
+Create `.env` file inside server folder:
 
-📅 Attendance APIs
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+```
 
-Mark Attendance
+---
 
-Get Attendance by Student
-
-Get Attendance by Class
-
-Attendance Analytics
-
-📂 File Upload APIs
-
-Upload Notes
-
-Upload Assignment
-
-Download Files
-
-Delete Files
-
-📊 Analytics APIs
-
-Class strength count
-
-Attendance percentage
-
-Subject-wise performance
-
-🧠 Advanced Features (Optional Improvements)
-
-Dark / Light Mode
-
-Search & Filter
-
-Pagination
-
-Real-time Notifications (Socket.io)
-
-Leave Request System
-
-Online Quiz System
-
-Parent Login
-
-Fee Payment Tracking
-
-Profile Image Upload
-
-📦 Database Design (MongoDB Collections)
-
-Users
-
-Classes
-
-Subjects
-
-Attendance
-
-Assignments
-
-Timetable
-
-Marks
-
-Notifications
-
-🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 Through this project, you will learn:
 
-Real-world React architecture
+- Real-world React architecture  
+- Role-based authentication system  
+- Backend API design using Node.js  
+- JWT security implementation  
+- File handling  
+- Lazy loading optimization  
+- State management  
+- Reusable component design  
+- Performance optimization  
 
-Role-based authentication system
+---
 
-Backend API design using Node.js
+# 🌟 Future Enhancements
 
-JWT security implementation
+- Dark / Light Mode  
+- Search & Filter  
+- Pagination  
+- Real-time Notifications (Socket.io)  
+- Parent Login  
+- Online Quiz System  
+- Fee Payment Tracking  
+- CI/CD Pipeline  
+- Docker Deployment  
 
-File handling
+---
 
-Lazy loading optimization
+# 📌 Author
 
-State management
+**Reshav Kumar**
 
-Reusable component design
-
-Performance optimization
-
-🌟 Future Enhancements
-
-Deploy using:
-
-Frontend → Vercel / Netlify
-
-Backend → Render / Railway
-
-Add CI/CD pipeline
-
-Dockerize application
+---
