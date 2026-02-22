@@ -265,7 +265,7 @@ server/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/smart-school-portal.git
+git clone https://github.com/reshav021/Smart-School-Portal.git
 ```
 
 ---
@@ -273,7 +273,7 @@ git clone https://github.com/your-username/smart-school-portal.git
 ## 2️⃣ Frontend Setup
 
 ```bash
-cd client
+cd Smart-School-Portal
 npm install
 npm start
 ```
